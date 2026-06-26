@@ -223,19 +223,37 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
 }
 .project-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); border-color: var(--brand); }
 .project-thumb {
-  height: 130px; position: relative; overflow: hidden;
+  height: 140px; position: relative; overflow: hidden;
   background: linear-gradient(135deg, var(--brand) 0%, var(--brand-2) 100%);
   display: grid; place-items: center;
 }
+/* 不同项目的渐变色调，增强辨识度 */
+.thumb-microservice { background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%); }
+.thumb-chat          { background: linear-gradient(135deg, #0ea5e9 0%, #2563eb 100%); }
+.thumb-ai            { background: linear-gradient(135deg, #7c3aed 0%, #db2777 100%); }
+.thumb-optimize      { background: linear-gradient(135deg, #059669 0%, #0ea5e9 100%); }
+.thumb-sop           { background: linear-gradient(135deg, #d97706 0%, #db2777 100%); }
+.thumb-infra         { background: linear-gradient(135deg, #475569 0%, #4f46e5 100%); }
+
 .project-thumb::after {
   content: ""; position: absolute; inset: 0;
-  background: radial-gradient(circle at 80% 20%, rgba(255,255,255,.25), transparent 50%);
+  background: radial-gradient(circle at 80% 20%, rgba(255,255,255,.22), transparent 55%);
+  pointer-events: none;
 }
+.thumb-art {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  z-index: 0; opacity: .9;
+  transition: transform .4s var(--ease);
+}
+.project-card:hover .thumb-art { transform: scale(1.06); }
 .project-mark {
-  font-size: 2.2rem; font-weight: 900; color: #fff; letter-spacing: -.02em;
-  position: relative; z-index: 1; text-shadow: 0 2px 12px rgba(0,0,0,.2);
+  position: absolute; top: 12px; right: 14px; z-index: 2;
+  font-size: .8rem; font-weight: 800; letter-spacing: .05em;
+  color: #fff; padding: 4px 10px; border-radius: 999px;
+  background: rgba(255,255,255,.18); backdrop-filter: blur(4px);
+  border: 1px solid rgba(255,255,255,.3);
 }
-[data-theme="dark"] .project-mark { color: #0a0a0b; }
+[data-theme="dark"] .project-mark { color: #fff; }
 .project-body { padding: 22px; flex: 1; display: flex; flex-direction: column; }
 .project-body h3 { font-size: 1.08rem; font-weight: 700; margin-bottom: 10px; line-height: 1.4; }
 .project-body p { font-size: .9rem; color: var(--text-soft); margin-bottom: 16px; flex: 1; }
