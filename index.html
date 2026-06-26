@@ -14,6 +14,7 @@
     <div class="container nav-inner">
       <a href="#hero" class="brand" aria-label="返回顶部">DongWeitao<span class="brand-dot">.dev</span></a>
       <nav class="nav-links" aria-label="主导航">
+        <a href="#skills">技能</a>
         <a href="#about">关于我</a>
         <a href="#projects">项目展示</a>
         <a href="#contact">联系我</a>
@@ -40,8 +41,8 @@
             专注于 .NET 后端工程、分布式系统稳定性，以及让 AI 真正落地到业务研发链路中的工程化实践。
           </p>
           <div class="hero-actions">
-            <a href="#projects" class="btn btn-primary">查看项目</a>
-            <a href="#contact" class="btn btn-ghost">联系我</a>
+            <a href="#skills" class="btn btn-primary">我的技能</a>
+            <a href="#projects" class="btn btn-ghost">查看项目</a>
           </div>
         </div>
         <div class="hero-avatar reveal">
@@ -49,6 +50,66 @@
             <div class="avatar">涛</div>
             <span class="avatar-badge">.NET</span>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills（前置，醒目展示） -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <p class="section-label reveal">技能</p>
+        <h2 class="section-title reveal">技术栈一览</h2>
+        <p class="section-sub reveal">从后端微服务到 AI 工程化，覆盖完整研发链路。</p>
+
+        <div class="skills-showcase">
+          <div class="skill-card reveal" data-skill="backend">
+            <div class="skill-card-icon">⚙️</div>
+            <h3 class="skill-card-title">后端与微服务</h3>
+            <p class="skill-card-desc">.NET 全家桶微服务架构，事件驱动与服务治理</p>
+            <ul class="skill-card-tags">
+              <li>.NET 5</li><li>.NET Core 3.1</li><li>SqlSugar</li><li>CAP 事件总线</li>
+              <li>RabbitMQ</li><li>Consul</li><li>Ocelot 网关</li><li>Autofac</li>
+              <li>Apollo</li><li>RESTful API</li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal" data-skill="db">
+            <div class="skill-card-icon">🗄️</div>
+            <h3 class="skill-card-title">数据库与中间件</h3>
+            <p class="skill-card-desc">多存储协同，从结构化到非结构化全链路</p>
+            <ul class="skill-card-tags">
+              <li>MySQL</li><li>PostgreSQL</li><li>MongoDB</li><li>Redis</li>
+              <li>Kibana / ES</li><li>JSONB</li><li>布隆过滤器</li><li>分布式锁</li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal" data-skill="ai">
+            <div class="skill-card-icon">🤖</div>
+            <h3 class="skill-card-title">AI 工程化</h3>
+            <p class="skill-card-desc">AI Agent 辅助开发工作流，MCP 多存储联调</p>
+            <ul class="skill-card-tags">
+              <li>Claude Code</li><li>Superpowers</li><li>MCP</li><li>skill-creator</li>
+              <li>brainstorming</li><li>writing-plans</li><li>Prompt Engineering</li>
+              <li>自检清单 / 校验点</li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal" data-skill="frontend">
+            <div class="skill-card-icon">🎨</div>
+            <h3 class="skill-card-title">前端与工具</h3>
+            <p class="skill-card-desc">Vue 业务前端与 DevOps 工具链</p>
+            <ul class="skill-card-tags">
+              <li>Vue2</li><li>Element UI</li><li>HTML / CSS / JS</li><li>Git Worktree</li>
+              <li>NLog</li><li>SkyWalking</li><li>Docker</li><li>Nginx</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="skill-stats reveal">
+          <div class="stat"><span class="stat-num">14</span><span class="stat-label">微服务解决方案</span></div>
+          <div class="stat"><span class="stat-num">5</span><span class="stat-label">类 MCP 联调</span></div>
+          <div class="stat"><span class="stat-num">8</span><span class="stat-label">处 AI 偏差修正固化</span></div>
+          <div class="stat"><span class="stat-num">5</span><span class="stat-label">步可复用工作流</span></div>
         </div>
       </div>
     </section>
@@ -67,9 +128,9 @@
               对代码质量、分布式一致性以及极致的系统稳定性有着近乎偏执的追求。
             </p>
             <p>
-              我的技术栈以 <strong>.NET / .NET Core</strong> 为核心，覆盖 SqlSugar、CAP 事件总线、
-              Consul 服务发现、Ocelot 网关、Autofac 等微服务全家桶，数据库侧熟悉 MySQL、PostgreSQL、
-              MongoDB、Redis 与 Kibana(ES) 的多存储协同。
+              我的技术栈以 <strong>.NET / .NET Core</strong> 为核心，
+              覆盖微服务全家桶与多存储协同，并深度落地 AI Agent 辅助开发。
+              <a href="#skills" class="inline-link">查看完整技术栈 →</a>
             </p>
             <p>
               除了常规后端开发，我深度探索 <strong>AI Agent 辅助开发</strong> 的工程化落地，
@@ -110,44 +171,6 @@
                 <p>定义「AI Agent + MCP 工具链」辅助企微消息接入的五步开发流程，
                   画清 MySQL / Postgres / MongoDB / Redis / Kibana 五类 MCP 的应用点与安全边界。</p>
               </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 技术栈 -->
-        <div class="skills-wrap reveal">
-          <p class="section-label">技术栈</p>
-          <h3 class="block-title">技能 &amp; 工具</h3>
-          <div class="skills-grid">
-            <div class="skill-group">
-              <h4>后端与微服务</h4>
-              <ul class="tags">
-                <li>.NET 5</li><li>.NET Core 3.1</li><li>SqlSugar</li><li>CAP 事件总线</li>
-                <li>RabbitMQ</li><li>Consul</li><li>Ocelot 网关</li><li>Autofac</li>
-                <li>Apollo 配置中心</li><li>RESTful API</li>
-              </ul>
-            </div>
-            <div class="skill-group">
-              <h4>数据库与中间件</h4>
-              <ul class="tags">
-                <li>MySQL</li><li>PostgreSQL</li><li>MongoDB</li><li>Redis</li>
-                <li>Kibana / ES</li><li>JSONB</li><li>布隆过滤器</li><li>分布式锁</li>
-              </ul>
-            </div>
-            <div class="skill-group">
-              <h4>AI 工程化</h4>
-              <ul class="tags">
-                <li>Claude Code</li><li>Superpowers Skills</li><li>MCP</li><li>skill-creator</li>
-                <li>brainstorming</li><li>writing-plans</li><li>subagent-driven-development</li>
-                <li>using-git-worktrees</li><li>Prompt Engineering</li><li>自检清单 / 校验点</li>
-              </ul>
-            </div>
-            <div class="skill-group">
-              <h4>前端与工具</h4>
-              <ul class="tags">
-                <li>Vue2</li><li>Element UI</li><li>HTML / CSS / JS</li><li>Git Worktree</li>
-                <li>NLog</li><li>SkyWalking</li><li>Docker</li><li>Nginx</li>
-              </ul>
             </div>
           </div>
         </div>

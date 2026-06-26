@@ -234,7 +234,7 @@
     }
   ];
 
-  var HOME_IDS = ["hero", "about", "projects", "contact"];
+  var HOME_IDS = ["hero", "skills", "about", "projects", "contact"];
   var detailSec = document.getElementById("projectDetail");
   var detailContainer = document.getElementById("detailContainer");
 
@@ -253,7 +253,7 @@
     if (detailSec) detailSec.hidden = true;
     // 从详情返回时强制显示首页动画元素（避免仍处于 opacity:0）
     if (forceVisible) {
-      document.querySelectorAll("#hero .reveal, #about .reveal, #projects .reveal, #contact .reveal")
+      document.querySelectorAll("#hero .reveal, #skills .reveal, #about .reveal, #projects .reveal, #contact .reveal")
         .forEach(function (el) { el.classList.add("visible"); });
     }
   }
