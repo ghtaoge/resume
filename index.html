@@ -162,7 +162,7 @@
 
         <div class="project-grid">
           <!-- 1 -->
-          <article class="project-card reveal">
+          <a class="project-card reveal" href="#project/1" data-project="1">
             <div class="project-thumb">
               <span class="project-mark">SC</span>
             </div>
@@ -175,11 +175,12 @@
                 <li>.NET 5</li><li>CAP / RabbitMQ</li><li>Consul</li><li>Ocelot</li>
                 <li>SqlSugar</li><li>Autofac</li>
               </ul>
+              <span class="card-more">查看详情 →</span>
             </div>
-          </article>
+          </a>
 
           <!-- 2 -->
-          <article class="project-card reveal">
+          <a class="project-card reveal" href="#project/2" data-project="2">
             <div class="project-thumb">
               <span class="project-mark">JW</span>
             </div>
@@ -191,11 +192,12 @@
                 <li>.NET Core 3.1</li><li>SqlSugar</li><li>MongoDB</li><li>RabbitMQ</li>
                 <li>Redis</li><li>Vue2</li>
               </ul>
+              <span class="card-more">查看详情 →</span>
             </div>
-          </article>
+          </a>
 
           <!-- 3 -->
-          <article class="project-card reveal">
+          <a class="project-card reveal" href="#project/3" data-project="3">
             <div class="project-thumb">
               <span class="project-mark">AI</span>
             </div>
@@ -207,11 +209,12 @@
                 <li>Claude Code</li><li>Superpowers</li><li>MCP</li><li>PostgreSQL</li>
                 <li>MongoDB</li><li>Redis</li>
               </ul>
+              <span class="card-more">查看详情 →</span>
             </div>
-          </article>
+          </a>
 
           <!-- 4 -->
-          <article class="project-card reveal">
+          <a class="project-card reveal" href="#project/4" data-project="4">
             <div class="project-thumb">
               <span class="project-mark">RC</span>
             </div>
@@ -224,11 +227,12 @@
                 <li>批处理幂等</li><li>Regex.Escape</li><li>escapeHtml</li>
                 <li>布隆过滤器</li><li>冷热 TTL</li>
               </ul>
+              <span class="card-more">查看详情 →</span>
             </div>
-          </article>
+          </a>
 
           <!-- 5 -->
-          <article class="project-card reveal">
+          <a class="project-card reveal" href="#project/5" data-project="5">
             <div class="project-thumb">
               <span class="project-mark">SOP</span>
             </div>
@@ -240,11 +244,12 @@
               <ul class="tags">
                 <li>五步流程</li><li>Custom Rules</li><li>自检清单</li><li>校验点</li><li>MCP 联调</li>
               </ul>
+              <span class="card-more">查看详情 →</span>
             </div>
-          </article>
+          </a>
 
           <!-- 6 -->
-          <article class="project-card reveal">
+          <a class="project-card reveal" href="#project/6" data-project="6">
             <div class="project-thumb">
               <span class="project-mark">JI</span>
             </div>
@@ -257,8 +262,9 @@
                 <li>Juse.SqlSugar</li><li>Juse.Cap</li><li>Juse.Redis</li><li>Juse.Consul</li>
                 <li>Juse.Apollo</li><li>Juse.Log</li>
               </ul>
+              <span class="card-more">查看详情 →</span>
             </div>
-          </article>
+          </a>
         </div>
       </div>
     </section>
@@ -315,6 +321,11 @@
           </form>
         </div>
       </div>
+    </section>
+
+    <!-- 项目详情视图（由 JS 路由控制显隐与渲染） -->
+    <section class="detail-view section" id="projectDetail" hidden>
+      <div class="container" id="detailContainer"><!-- JS 渲染 --></div>
     </section>
   </main>
 
