@@ -1,6 +1,6 @@
-# 董伟涛 · 个人作品集
+# 个人作品集
 
-仿 [shaun.asia](https://www.shaun.asia/) 风格的单页个人作品集站点，内容基于董伟涛的 AI 应用实践文档（SCRM 微服务系统 / Juse.WeChat 风控系统 / AI Agent 辅助开发工作流）填充。
+仿 [shaun.asia](https://www.shaun.asia/) 风格的单页个人作品集站点，内容基于 AI 应用实践文档（SCRM 微服务系统 / Juse.WeChat 风控系统 / AI Agent 辅助开发工作流）填充。
 
 纯 `HTML · CSS · JS` 构建，零依赖、零框架，打开即用。
 
@@ -16,7 +16,7 @@
 ## 目录结构
 
 ```
-dongweitao-portfolio/
+portfolio/
 ├── index.html      # 页面结构
 ├── styles.css      # 样式（CSS 变量 + 明暗主题）
 ├── script.js       # 交互逻辑
@@ -47,7 +47,7 @@ npx serve .
 - **项目卡片**：`.project-grid` 中的 `.project-card`
 - **联系方式**：`#contact` 中的邮箱 / GitHub / Gitee 链接（当前为占位，请替换为真实信息）
 
-> 联系方式中的邮箱 `dongweitao@example.com` 与 GitHub/Gitee `@dongweitao` 为占位符，部署前请替换为真实账号。
+> 联系方式中的邮箱与 GitHub/Gitee 为占位符，部署前请替换为真实账号。
 
 ## 技术栈
 
