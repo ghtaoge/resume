@@ -3,8 +3,10 @@ name: Deploy to Netlify
 on:
   push:
     branches: [main]
-  pull_request:
-    branches: [main]
+
+permissions:
+  contents: read
+  deployments: write
 
 jobs:
   deploy:
@@ -14,7 +16,6 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Deploy to Netlify
-        id: deploy
         uses: nwtgck/actions-netlify@v4
         with:
           publish-dir: .
@@ -24,10 +25,3 @@ jobs:
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-
-      - name: Netlify Deploy URL
-        run: echo "Deploy URL: ${{ steps.deploy.outputs.deploy-url }}"
-
-      - name: Netlify Deploy Message
-        if: ${{ steps.deploy.outputs.deploy-message }}
-        run: echo "Deploy message: ${{ steps.deploy.outputs.deploy-message }}"
