@@ -6,7 +6,6 @@ on:
 
 permissions:
   contents: read
-  deployments: write
 
 jobs:
   deploy:
@@ -15,13 +14,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Install Netlify CLI
+        run: npm install -g netlify-cli
+
       - name: Deploy to Netlify
-        uses: nwtgck/actions-netlify@v4
-        with:
-          publish-dir: .
-          production-branch: main
-          production-deploy: true
-          deploy-message: "Deploy from GitHub Actions - ${{ github.sha }}"
+        run: netlify deploy --prod --dir=. --message="Deploy from GitHub Actions - ${{ github.sha }}"
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
