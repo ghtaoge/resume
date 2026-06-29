@@ -56,5 +56,4 @@ HTML5 · CSS3（自定义属性、Grid、Flexbox、`color-mix`） · 原生 Java
 ## License
 
 MIT
-
-> 自动部署：push 到 main 分支即触发 Netlify 部署 🚀
+> 🚀 Push to main = auto deploy via Netlify
