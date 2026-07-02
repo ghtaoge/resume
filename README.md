@@ -11,7 +11,7 @@
 
 ## ✨ 特性
 
-- **单页结构**：导航 → Hero → 技能栈 → 关于（自我介绍 + 实践经历）→ 精选项目 → 聻系方式 → 页脚
+- **单页结构**：导航 → Hero → 技能栈 → 关于（自我介绍 + 实践经历）→ 精选项目 → 联系方式 → 页脚
 - **6 个精选项目**：SCRM 微服务系统 · WeChat 风控 · 微信内聊 AI 试点 · 风控优化 · AI Agent SOP 工作流 · juse.infrastructure 基础设施层
 - **Hash 路由详情页**：`#project/1` ~ `#project/6` 客户端渲染，XSS 安全转义
 - **明暗主题**：一键切换 + localStorage 偏好记忆 + 系统配色跟随
@@ -74,9 +74,9 @@ npx serve .
 | 实践经历 | `#about` `.experience` | 工作经历时间线 |
 | 项目卡片 | `#projects` `.project-grid` | 6 张项目卡片 + SVG 插画 |
 | 项目详情 | `script.js` `PROJECTS[]` | 项目描述、技术栈、链接 |
-| 聻系方式 | `#contact` | 邮箱 / GitHub / Gitee 链接 |
+| 联系方式 | `#contact` | 邮箱 / GitHub / Gitee 链接 |
 
-> ⚠️ 聻系方式中的邮箱与 GitHub/Gitee 链接当前为占位符，部署前请替换为真实账号信息。
+> ⚠️ 联系方式中的邮箱与 GitHub/Gitee 链接当前为占位符，部署前请替换为真实账号信息。
 
 ## 🎨 主题系统
 

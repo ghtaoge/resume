@@ -32,3 +32,10 @@ logs/
 # Temporary files
 *.tmp
 *.bak
+
+# Claude session / temp files
+.claude/
+.playwright-cli/
+sub-snap.yaml
+desktop-check.png
+mobile-check.png
