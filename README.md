@@ -1,6 +1,6 @@
-# DongWeitao.dev — 个人作品集
+# 个人作品集站点
 
-> 董伟涛（DongWeitao）的单页个人作品集站点 —— 后端开发工程师 · 技术组长，展示 SCRM 微服务架构、WeChat 风控系统、AI Agent 辅助开发等实践项目。
+> 单页个人作品集站点 —— 后端开发工程师 · 技术组长，展示 SCRM 微服务架构、WeChat 风控系统、AI Agent 辅助开发等实践项目。
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3)
@@ -19,7 +19,7 @@
 - **滚动动画**：IntersectionObserver 渐入 + stagger 延迟，尊重 `prefers-reduced-motion`
 - **一键复制邮箱**：Clipboard API + execCommand 兜底，"已复制" 提示 1.6s
 - **留言表单**：前端校验（姓名 / 邮箱 / 内容） + mailto 唤起邮件客户端
-- **SVG 图标**：favicon 为渐变圆角矩形 + "涛" 字，每项目卡片内嵌独立配色 SVG 插画
+- **SVG 图标**：favicon 为渐变圆角矩形自定义图标，每项目卡片内嵌独立配色 SVG 插画
 
 ## 🛠 技术栈
 
